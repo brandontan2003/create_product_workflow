@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  business-central:
+    image: registry.redhat.io/ibm-bamoe/bamoe-businesscentral-rhel8:8.0.6-9.1733300825
+    container_name: business-central
+    ports:
+      - "9000:8080"
+
+  kie-server:
+    image: registry.redhat.io/ibm-bamoe/bamoe-kieserver-rhel8
+    container_name: kie-server
+    ports:
+      - "9001:8080"
+      - "9990:9990"
+
+networks:
+  default:
+    name: product-management-service
