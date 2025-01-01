@@ -4,10 +4,10 @@ services:
   business-central:
     image: registry.redhat.io/ibm-bamoe/bamoe-businesscentral-rhel8:8.0.6-9.1733300825
     container_name: business-central
-    volumes:
-      - ./:/home/create_product_workflow
     ports:
       - "9000:8080"
+    volumes:
+      - ./:/home/create_product_workflow
 
   kie-server:
     image: registry.redhat.io/ibm-bamoe/bamoe-kieserver-rhel8
