@@ -15,6 +15,8 @@ services:
     ports:
       - "9001:8080"
       - "9990:9990"
+    volumes:
+      - $HOME/.m2:/home/jboss/.m2
 
 networks:
   default:
