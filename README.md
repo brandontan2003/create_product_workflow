@@ -57,7 +57,11 @@ Before you begin, ensure that you have the following tools and services installe
 ---
 
 ## Useful API Endpoints
-
+### Authorization
+All kie-server endpoints require **Bearer Token** authentication. Include the following header in your API requests:
+```http
+Authorization: Basic YWRtaW5Vc2VyOmFkbWluMSE=
+```
 ### Deploy Business Process
 **PUT** `http://localhost:9001/services/rest/server/containers/create_product_workflow`
 
@@ -101,11 +105,11 @@ Before you begin, ensure that you have the following tools and services installe
 ```
 
 #### Response Body
-It returns the processInstanceId which is needed to view the image of the business process used in [this API](#get-process-instance-image).
+The response returns the `processInstanceId`, which is needed to view the image of the business process.
 ```text
 3
 ```
 
 ### Get Process Instance Image
-To get the processInstanceId, call the [following API](#start-new-process). <br>
+To get the `processInstanceId`, call the [Start New Process](#start-new-process) API. <br>
 **GET** `http://localhost:9001/services/rest/server/containers/create_product_workflow/images/processes/instances/<processInstanceId>`
