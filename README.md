@@ -3,6 +3,13 @@
 ## Description
 This repository demonstrates how to use Business Process Model Notation (BPMN) to orchestrate RESTful API calls and create records in a database. The process automates the flow of business logic by invoking external APIs based on defined workflows and business rules, resulting in efficient data handling and management.
 
+## Technologies Used
+- **Java**: A versatile, platform-independent programming language used for developing the backend logic and integrating the BPMN process. Java is utilized for its rich ecosystem, stability, and performance.
+- **Maven**: A build automation tool primarily used for managing project dependencies, building the application, and ensuring all required libraries and modules are available.
+- **Docker**: A containerization platform used to package the application and its dependencies into a portable container. This allows for consistent development, testing, and production environments.
+- **BPMN (Business Process Model and Notation)**: A graphical representation for specifying business processes in a workflow. In this project, BPMN is used to define and orchestrate the execution flow that interacts with RESTful APIs and updates the database.
+---
+
 ## Pre-requisites
 Before you begin, ensure that you have the following tools and services installed:
 1. **Java**  
@@ -32,13 +39,6 @@ Before you begin, ensure that you have the following tools and services installe
       Password: admin1!
       ```
    4. Kie Server API Documentation: http://localhost:9001/docs/
----
-
-## Technologies Used
-- **Java**: A versatile, platform-independent programming language used for developing the backend logic and integrating the BPMN process. Java is utilized for its rich ecosystem, stability, and performance.
-- **Maven**: A build automation tool primarily used for managing project dependencies, building the application, and ensuring all required libraries and modules are available.
-- **Docker**: A containerization platform used to package the application and its dependencies into a portable container. This allows for consistent development, testing, and production environments.
-- **BPMN (Business Process Model and Notation)**: A graphical representation for specifying business processes in a workflow. In this project, BPMN is used to define and orchestrate the execution flow that interacts with RESTful APIs and updates the database.
 ---
 
 ## Setup Instructions
